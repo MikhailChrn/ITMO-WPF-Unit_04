@@ -1,0 +1,39 @@
+﻿<Window x:Class="Unit_04_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unit_04_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="350">
+    <StackPanel>
+        <Expander Header="Expander 1"
+                  IsExpanded="False"
+                  Margin="5"
+                  Padding="3"
+                  BorderBrush="Black">
+            <Button Content="Button"/>
+        </Expander>
+
+        <Expander Header="Expander 2"
+                  IsExpanded="True"
+                  MaxHeight="200"
+                  Margin="5"
+                  Padding="3"
+                  BorderBrush="Black">
+            <TextBox TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch" Padding="5">
+                Этот салат придумал французский шеф Люсьен Оливье, который в 60-80-х годах ХIХ века возглавлял кухню ресторана «Эрмитаж» на Трубной площади в Москве. Придумал не совсем с нуля: к этому времени в русской дворянской кухне были очень популярны так называемые майонезы — из рыбы, курицы и дичи. Не подумайте, что это соус. Скорее нечто среднее между салатом и заливным: кусочки мяса, рыбы или птицы подавались в муссе из крепкого взбитого бульона с кубиками мясного или рыбного желе — ланспика, часто цветного (например, подкрашенного шафраном), и к этому блюду непременно полагались соусы, прежде всего провансаль, то есть майонез на прованском масле. Оливье пытался понять наш русский вкус, наш климат, наши продукты и наши нужды и начал экспериментировать. Вначале добавил к майонезу из рябчиков немного картошки, потом оливки и каперсы, красиво нарезанные яйца и раковые шейки. Чуть позже принялся все перемешивать, приметив эту привычку у своих русских гостей, и заправлять яичным провансалем собственной рецептуры. Соус выходил просто волшебным — нежно кремовым, при этом пикантным и очень легким.
+            </TextBox>
+        </Expander>
+
+        <Expander Header="Expander 3"
+                  Margin="5"
+                  Padding="3"
+                  ExpandDirection="Right"
+                  IsExpanded="False"
+                  BorderBrush="Black">
+            <Button Height="23">Test Button</Button>
+        </Expander>
+
+    </StackPanel>
+</Window>
